@@ -57,4 +57,4 @@ import _ from 'lodash';
 
 console.log('lodash.uniq', _.uniq([1, 1, 7]));
 
-_.add; // if we hover the mouse on "add" we will see the what types it can take now
+_.add(2, 5); // if we hover the mouse on "add" we will see the what types it can take now
