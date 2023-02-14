@@ -33,3 +33,19 @@ inputText.addEventListener('input', (e) => {
   const myInput = e.currentTarget as HTMLInputElement;
   console.log(myInput.value);
 });
+
+/* *7* Create Your First Generic in TypeScript *** */
+
+// Instead of "IdontKnowTheType" we usually use "T"
+
+function fill<IdontKnowTheType>(someArray: any[], item: IdontKnowTheType): IdontKnowTheType[] {
+  return someArray.map(() => item);
+}
+
+const result = fill([1, 2, 3], 'a');
+
+result.map((value) => value.toUpperCase());
+
+const result2 = fill(['a', 'b', 'c'], 4);
+
+result2.map((value) => value / 2);
