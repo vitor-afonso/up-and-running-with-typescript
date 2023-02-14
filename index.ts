@@ -49,3 +49,12 @@ result.map((value) => value.toUpperCase());
 const result2 = fill(['a', 'b', 'c'], 4);
 
 result2.map((value) => value / 2);
+
+/* *8* Use Type Definitions for Popular Projects on npm with @types *** */
+
+import _ from 'lodash';
+// follow VSCode quick fix suggestion and install @types/lodash
+
+console.log('lodash.uniq', _.uniq([1, 1, 7]));
+
+_.add(2, 5); // if we hover the mouse on "add" we will see the what types it can take now
