@@ -5,14 +5,15 @@
 /dist
 /.pnp
 .pnp.js
-/.cache
-.cache
 
 # testing
 /coverage
 
 # production
 /build
+/.cache
+.cache
+.parcel-cache
 
 # misc
 .DS_Store
